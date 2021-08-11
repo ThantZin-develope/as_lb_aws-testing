@@ -116,7 +116,7 @@ generation:AmazonLinuxGeneration.AMAZON_LINUX_2
      vpcSubnets: subnetSelectoion2
     }
     );
-
+    console.log('testing something changes');
     myautoscaling2.addUserData(
       '#!/bin/bash', 'sudo su', 'yum update -y', 'yum install -y httpd','systemctl start httpd','systemctl enable httpd',
       'cd /var/www/html/', 'mkdir server2' , 'echo "<h1>My Web Server2 $(hostname -f)</h1>" > /var/www/html/server2/index.html'
