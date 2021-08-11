@@ -1,0 +1,16 @@
+{
+    
+    "Resources": {
+        "Ec2Instance": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "SecurityGroupIds": [
+                    "sg-02ef5b17d3180145d"
+                ],
+                "KeyName":"test",
+                "ImageId":
+                "ami-0c2b8ca1dad447f8a"
+            }
+        }
+    }
+}

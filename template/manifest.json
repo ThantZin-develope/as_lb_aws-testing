@@ -1,0 +1,1224 @@
+{
+  "version": "13.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "Stack1": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Stack1.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/Stack1/MyVpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcF9F0CA6F",
+            "trace": [
+              "new Vpc (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:710:21)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:42:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/MyVpc/public-subnetSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet1SubnetABA0FC9E",
+            "trace": [
+              "new Subnet (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:997:20)",
+              "new PublicSubnet (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:853:12)",
+              "new Vpc (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:42:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/MyVpc/public-subnetSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet1RouteTable59212988",
+            "trace": [
+              "new Subnet (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1015:19)",
+              "new PublicSubnet (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:853:12)",
+              "new Vpc (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:42:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/MyVpc/public-subnetSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet1RouteTableAssociation763B80D4",
+            "trace": [
+              "new Subnet (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1021:5)",
+              "new PublicSubnet (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:853:12)",
+              "new Vpc (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:42:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/MyVpc/public-subnetSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet1DefaultRouteC0EC94F8",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1031:19)",
+              "F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:758:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:757:46)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:42:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/MyVpc/public-subnetSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet2SubnetA903F0F0",
+            "trace": [
+              "new Subnet (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:997:20)",
+              "new PublicSubnet (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:853:12)",
+              "new Vpc (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:42:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/MyVpc/public-subnetSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet2RouteTable8FC38586",
+            "trace": [
+              "new Subnet (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1015:19)",
+              "new PublicSubnet (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:853:12)",
+              "new Vpc (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:42:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/MyVpc/public-subnetSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet2RouteTableAssociationB59373E7",
+            "trace": [
+              "new Subnet (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1021:5)",
+              "new PublicSubnet (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1153:5)",
+              "F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:882:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:864:28)",
+              "Vpc.createSubnets (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:853:12)",
+              "new Vpc (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:739:10)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:42:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/MyVpc/public-subnetSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcpublicsubnetSubnet2DefaultRoute547B95B3",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:1031:19)",
+              "F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:758:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:757:46)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:42:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/MyVpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcIGW5C4A4F63",
+            "trace": [
+              "new Vpc (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:746:19)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:42:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/MyVpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyVpcVPCGW488ACE0D",
+            "trace": [
+              "new Vpc (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\vpc.ts:752:19)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:42:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/MyWebSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyWebSecurityGroup0E6CF364",
+            "trace": [
+              "new SecurityGroup (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\security-group.ts:289:26)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:55:24)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/Ec2FromCDK/InstanceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Ec2FromCDKInstanceRoleFFA1D7A5",
+            "trace": [
+              "new Role (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "new Instance (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\instance.ts:155:31)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:68:21)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/Ec2FromCDK/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Ec2FromCDKInstanceProfileDA635F39",
+            "trace": [
+              "new Instance (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\instance.ts:160:24)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:68:21)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/Ec2FromCDK/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Ec2FromCDK6A51736C",
+            "trace": [
+              "new Instance (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\instance.ts:195:21)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:68:21)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/SsmParameterValue:--aws--service--ami-amazon-linux-latest--amzn2-ami-hvm-arm64-gp2:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmarm64gp2C96584B6F00A464EAD1953AFF4B05118Parameter",
+            "trace": [
+              "Function.fromStringParameterAttributes (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ssm\\lib\\parameter.ts:182:9)",
+              "Function.valueForTypedStringParameter (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ssm\\lib\\parameter.ts:233:17)",
+              "AmazonLinuxImage.getImage (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\machine-image.ts:71:37)",
+              "new Instance (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-ec2\\lib\\instance.ts:165:44)",
+              "new GltestStack (F:\\aws-land\\gltest\\lib\\gltest-stack.ts:68:21)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:8:25)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack1/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (events.js:482:26)",
+              "process.emit (events.js:375:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (F:\\aws-land\\gltest\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/Stack1/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:31:27)",
+              "F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (events.js:482:26)",
+              "process.emit (events.js:375:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (F:\\aws-land\\gltest\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/Stack1/Exports/Output{\"Ref\":\"Ec2FromCDK6A51736C\"}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputRefEc2FromCDK6A51736C5C9CE8F9",
+            "trace": [
+              "GltestStack.exportValue (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:494:7)",
+              "createImportValue (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:167:37)",
+              "resolveValue (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:103:10)",
+              "Object.resolveReferences (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:30:24)",
+              "Object.prepareApp (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\prepare-app.ts:31:3)",
+              "Object.synthesize (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:24:3)",
+              "App.synth (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (events.js:482:26)",
+              "process.emit (events.js:375:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (F:\\aws-land\\gltest\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/Stack1/Exports/Output{\"Fn::GetAtt\":[\"Ec2FromCDK6A51736C\",\"PublicIp\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttEc2FromCDK6A51736CPublicIp13FA3ACA",
+            "trace": [
+              "GltestStack.exportValue (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:494:7)",
+              "createImportValue (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:167:37)",
+              "resolveValue (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:103:10)",
+              "Object.resolveReferences (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:30:24)",
+              "Object.prepareApp (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\prepare-app.ts:31:3)",
+              "Object.synthesize (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:24:3)",
+              "App.synth (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (events.js:482:26)",
+              "process.emit (events.js:375:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (F:\\aws-land\\gltest\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/Stack1/Exports/Output{\"Fn::GetAtt\":[\"Ec2FromCDK6A51736C\",\"PublicDnsName\"]}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ExportsOutputFnGetAttEc2FromCDK6A51736CPublicDnsName329810CE",
+            "trace": [
+              "GltestStack.exportValue (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:494:7)",
+              "createImportValue (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:167:37)",
+              "resolveValue (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:103:10)",
+              "Object.resolveReferences (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\refs.ts:30:24)",
+              "Object.prepareApp (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\prepare-app.ts:31:3)",
+              "Object.synthesize (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:24:3)",
+              "App.synth (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (events.js:482:26)",
+              "process.emit (events.js:375:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (F:\\aws-land\\gltest\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "Stack1"
+    },
+    "Stack2": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "Stack2.template.json",
+        "validateOnSynth": false
+      },
+      "dependencies": [
+        "Stack1"
+      ],
+      "metadata": {
+        "/Stack2": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.548b6659e60bf88550c0f43cd9d9eff3e4425b3bca213fd47e15d0330b389703",
+              "id": "548b6659e60bf88550c0f43cd9d9eff3e4425b3bca213fd47e15d0330b389703",
+              "packaging": "zip",
+              "sourceHash": "548b6659e60bf88550c0f43cd9d9eff3e4425b3bca213fd47e15d0330b389703",
+              "s3BucketParameter": "AssetParameters548b6659e60bf88550c0f43cd9d9eff3e4425b3bca213fd47e15d0330b389703S3Bucket8FBF73D6",
+              "s3KeyParameter": "AssetParameters548b6659e60bf88550c0f43cd9d9eff3e4425b3bca213fd47e15d0330b389703S3VersionKey83AFC76A",
+              "artifactHashParameter": "AssetParameters548b6659e60bf88550c0f43cd9d9eff3e4425b3bca213fd47e15d0330b389703ArtifactHashB14E22F9"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\construct-compat.ts:252:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:161:23)",
+              "LegacyStackSynthesizer.addFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "WithMyEc2Instance.addFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:180:20)",
+              "new Function (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:327:29)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:16:26)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/MyLambdaFunction/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaFunctionServiceRole313A4D46",
+            "trace": [
+              "new Role (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "new Function (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:307:31)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:16:26)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/MyLambdaFunction/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaFunction67CCA873",
+            "trace": [
+              "new Function (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:369:35)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:16:26)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/AssetParameters/548b6659e60bf88550c0f43cd9d9eff3e4425b3bca213fd47e15d0330b389703/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters548b6659e60bf88550c0f43cd9d9eff3e4425b3bca213fd47e15d0330b389703S3Bucket8FBF73D6",
+            "trace": [
+              "new FileAssetParameters (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "WithMyEc2Instance.addFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:180:20)",
+              "new Function (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:327:29)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:16:26)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/AssetParameters/548b6659e60bf88550c0f43cd9d9eff3e4425b3bca213fd47e15d0330b389703/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters548b6659e60bf88550c0f43cd9d9eff3e4425b3bca213fd47e15d0330b389703S3VersionKey83AFC76A",
+            "trace": [
+              "new FileAssetParameters (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "WithMyEc2Instance.addFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:180:20)",
+              "new Function (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:327:29)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:16:26)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/AssetParameters/548b6659e60bf88550c0f43cd9d9eff3e4425b3bca213fd47e15d0330b389703/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters548b6659e60bf88550c0f43cd9d9eff3e4425b3bca213fd47e15d0330b389703ArtifactHashB14E22F9",
+            "trace": [
+              "new FileAssetParameters (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:66:19)",
+              "WithMyEc2Instance.addFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stack-synthesizers\\legacy.ts:70:25)",
+              "new Asset (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-s3-assets\\lib\\asset.ts:86:40)",
+              "AssetCode.bind (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-lambda\\lib\\code.ts:180:20)",
+              "new Function (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function.ts:327:29)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:16:26)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/APIGateway/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGateway71B6BBE0",
+            "trace": [
+              "new RestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:463:22)",
+              "new LambdaRestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:26:5)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:25:29)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/APIGateway/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayCloudWatchRole4835D6D9",
+            "trace": [
+              "new Role (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-iam\\lib\\role.ts:199:18)",
+              "LambdaRestApi._configureCloudWatchRole (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:289:18)",
+              "new RestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:481:12)",
+              "new LambdaRestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:26:5)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:25:29)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/APIGateway/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayAccount871F0E99",
+            "trace": [
+              "LambdaRestApi._configureCloudWatchRole (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:294:22)",
+              "new RestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:481:12)",
+              "new LambdaRestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:26:5)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:25:29)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/APIGateway/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayDeploymentF0E5ED0Ae5bc430cb9e5f5e72f3d86da18f84282",
+            "trace": [
+              "new Deployment (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\deployment.ts:34:21)",
+              "LambdaRestApi._configureDeployment (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:318:32)",
+              "new RestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:484:10)",
+              "new LambdaRestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:26:5)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:25:29)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/APIGateway/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayDeploymentStageprod9BCCD7C3",
+            "trace": [
+              "new Stage (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\stage.ts:136:22)",
+              "LambdaRestApi._configureDeployment (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:328:30)",
+              "new RestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:484:10)",
+              "new LambdaRestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:26:5)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:25:29)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/APIGateway/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayEndpoint038C57B1",
+            "trace": [
+              "LambdaRestApi._configureDeployment (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:333:7)",
+              "new RestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\restapi.ts:484:10)",
+              "new LambdaRestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:26:5)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:25:29)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/APIGateway/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayproxy4C63E7C2",
+            "trace": [
+              "new Resource (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:342:22)",
+              "new ProxyResource (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:397:5)",
+              "RootResource.addProxy (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:99:12)",
+              "new LambdaRestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:33:17)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:25:29)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/APIGateway/Default/{proxy+}/ANY/ApiPermission.Stack2APIGateway8B4FC300.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayproxyANYApiPermissionStack2APIGateway8B4FC300ANYproxy79F39399",
+            "trace": [
+              "Function.addPermission (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:41:18)",
+              "new Method (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "ProxyResource.addMethod (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "ProxyResource.addMethod (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:419:18)",
+              "new ProxyResource (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:406:29)",
+              "RootResource.addProxy (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:99:12)",
+              "new LambdaRestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:33:17)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:25:29)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/APIGateway/Default/{proxy+}/ANY/ApiPermission.Test.Stack2APIGateway8B4FC300.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayproxyANYApiPermissionTestStack2APIGateway8B4FC300ANYproxy5715CBDF",
+            "trace": [
+              "Function.addPermission (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:49:20)",
+              "new Method (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "ProxyResource.addMethod (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "ProxyResource.addMethod (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:419:18)",
+              "new ProxyResource (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:406:29)",
+              "RootResource.addProxy (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:99:12)",
+              "new LambdaRestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:33:17)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:25:29)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/APIGateway/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayproxyANYFFA55769",
+            "trace": [
+              "new Method (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:116:22)",
+              "ProxyResource.addMethod (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "ProxyResource.addMethod (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:419:18)",
+              "new ProxyResource (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:406:29)",
+              "RootResource.addProxy (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:99:12)",
+              "new LambdaRestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:33:17)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:25:29)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/APIGateway/Default/ANY/ApiPermission.Stack2APIGateway8B4FC300.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayANYApiPermissionStack2APIGateway8B4FC300ANY29EB651D",
+            "trace": [
+              "Function.addPermission (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:41:18)",
+              "new Method (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "RootResource.addMethod (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "ProxyResource.addMethod (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:416:29)",
+              "new ProxyResource (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:406:29)",
+              "RootResource.addProxy (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:99:12)",
+              "new LambdaRestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:33:17)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:25:29)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/APIGateway/Default/ANY/ApiPermission.Test.Stack2APIGateway8B4FC300.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayANYApiPermissionTestStack2APIGateway8B4FC300ANY77B8BEF6",
+            "trace": [
+              "Function.addPermission (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-lambda\\lib\\function-base.ts:130:5)",
+              "LambdaIntegration.bind (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\integrations\\lambda.ts:49:20)",
+              "new Method (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:98:36)",
+              "RootResource.addMethod (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "ProxyResource.addMethod (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:416:29)",
+              "new ProxyResource (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:406:29)",
+              "RootResource.addProxy (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:99:12)",
+              "new LambdaRestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:33:17)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:25:29)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/APIGateway/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "APIGatewayANY3E5F1055",
+            "trace": [
+              "new Method (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\method.ts:116:22)",
+              "RootResource.addMethod (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:95:12)",
+              "ProxyResource.addMethod (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:416:29)",
+              "new ProxyResource (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:406:29)",
+              "RootResource.addProxy (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\resource.ts:99:12)",
+              "new LambdaRestApi (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\aws-apigateway\\lib\\lambda-api.ts:33:17)",
+              "new WithMyEc2Instance (F:\\aws-land\\gltest\\lib\\my-stack2.ts:25:29)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\bin\\gltest.ts:11:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:198:14)",
+              "Object.<anonymous> (F:\\aws-land\\gltest\\node_modules\\ts-node\\src\\bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/Stack2/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:22:24)",
+              "F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (events.js:482:26)",
+              "process.emit (events.js:375:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (F:\\aws-land\\gltest\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ],
+        "/Stack2/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\metadata-resource.ts:31:27)",
+              "F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:166:5",
+              "visit (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:231:5)",
+              "visit (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:227:5)",
+              "injectMetadataResources (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:157:3)",
+              "Object.synthesize (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\private\\synthesis.ts:18:3)",
+              "App.synth (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\stage.ts:94:23)",
+              "process.<anonymous> (F:\\aws-land\\gltest\\node_modules\\@aws-cdk\\core\\lib\\app.ts:64:45)",
+              "Object.onceWrapper (events.js:482:26)",
+              "process.emit (events.js:375:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (F:\\aws-land\\gltest\\node_modules\\source-map-support\\source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "Stack2"
+    }
+  }
+}
